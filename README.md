@@ -13,21 +13,20 @@ Implement an order book for stock market transactions.
 - Process synchronization
 - Race conditions
 
-## How to Run
+## How to Build and Run
 1. Clone the repository
-2. Install dependencies: `pip install -r requirements.txt`
-3. Run tests: `pytest`
+2. Build the project: `make`
+3. Run the tests: `./tests/test_order_book`
 
 ## Project Structure
 order_book/
 ├── README.md
-├── requirements.txt
-├── setup.py
-├── order_book/
-│   ├── __init__.py
-│   ├── order.py
-│   ├── order_book.py
-│   ├── utils.py
+├── Makefile
+├── src/
+│   ├── main.cpp
+│   ├── Order.hpp
+│   ├── OrderBook.hpp
+│   ├── Order.cpp
+│   ├── OrderBook.cpp
 ├── tests/
-│   ├── __init__.py
-│   ├── test_order_book.py
+│   ├── test_order_book.cpp
